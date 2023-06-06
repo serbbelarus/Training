@@ -1,28 +1,22 @@
 import React from "react";
 import classNames from 'classnames';
-
 import "./style.css";
 
-// написать красивые стили для кнопок: (primary, secondary: true/false)
-// сделать так чтобы на disabled менялся стиль кнопки
-// если loading то стили такие как и на disabled
+// есть 2 переменные. прі нажатіі на кнопку счітать сумму этіх переменных і выводіть в кнопе
 
-// принимать в себя и стили и название класса 
-
-// поудалять лишнее
-// разобраться как комитить только некоторые файлы а не все сразу
-
-// Вместо текста добавіть спіннер
-// напісать функцію чтобы после кліка кнопка становілась loading, а через 5 секунд опять обычной
-
-const Button = ({children, onClick, secondary, disabled, loading,style}) => {
+const Button = ({onBtnPress, secondary, disabled, loading, className, text, children}) => {
 
 
-let className = classNames('primary',{'secondary': secondary}, {'disabled' : disabled,loading}, {'style' : style});
-
+let classes = classNames(
+    'primary',
+    {'secondary': secondary},
+    {'disabled' : disabled || loading},
+    {[`${className}`]: className}
+    );
+    
     return (
-        <button onClick={onClick} className={className} disabled={disabled || loading} >
-            {loading ? 'Загрузка...' : children}
+        <button onClick={onBtnPress} className={classes} disabled={disabled} >
+            {loading ? 'Загрузка...' : children && text}
         </button>
     )
 }
