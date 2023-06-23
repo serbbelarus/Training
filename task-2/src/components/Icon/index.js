@@ -1,11 +1,7 @@
 import classNames from "classnames";
 import "./style.css";
 
-// Добавить props className +
-// Добавить обработчик onClick +
-// Добавить props style +
-
- const Icon = ({iconName, size, onClick, className, style1, style2, ...props }) => {
+ const Icon = ({iconName, size, onClick,...props }) => {
     console.log(iconName, size);
     let xer = `fa-solid `;
 
@@ -24,9 +20,7 @@ import "./style.css";
             [`fa-${iconName}`]: iconName,
             [`fa-${size}`] : size
         },
-        {'className': className},
-        {'style1': style1},
-        {'style2': style2}
+       
     );
 
         console.log('className', className1);
@@ -34,7 +28,7 @@ import "./style.css";
         
 
     return (
-       <i className={className1} onClick={onClick} style1={'style1'} style2={'style2'}></i>
+       <i className={className1} onClick={onClick} ></i>
     )
  }
  export default Icon;
