@@ -1,7 +1,5 @@
 import './App.css';
-import Icon from './components/Icon'
-import classNames from "classnames";
-
+import Icon from './components/Icon';
 function App() {
   let a = 5;
   let b= 'Романа';
@@ -11,16 +9,11 @@ function App() {
   const onclick1 = () => {
     console.log(3);
   };
-  const clasess = classNames(
-    'icon1',
-    'icon2',
-  );
   return (
-    <div className="App">
-       <i className={clasess} ></i>
-      <Icon  iconName={"cloud"} size={"2xl"} className={'icon1'} style={{margin:15}}  onClick={onclick1} 
+    <div className="App">  
+      <Icon  iconName={"cloud"} size={"2xl"} icon1={'icon1'} style={{margin:15}}  onClick={onclick1} 
       ></Icon>
-      <Icon iconName={"ghost"} style={{margin:25}}  className={'icon2'}></Icon>
+      <Icon iconName={"ghost"} style={{margin:25}}  icon2={'icon2'}></Icon>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.primary { 
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+.secondary { 
+    background-color: white;
+    color: black;
+}
+.disabled {
+background-color: aqua;
+color: blueviolet;
+}
