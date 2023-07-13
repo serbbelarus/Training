@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import "./style.css";
 
- const Icon = ({iconName, size, onClick,...props }) => {
-    console.log(iconName, size);
+ const  Icon = ({iconName, size, onClick,icon1,icon2,...props }) => {
     let xer = `fa-solid `;
 
     if (iconName) {
@@ -11,24 +10,18 @@ import "./style.css";
     if (size) {
         xer += `fa-${size}`
     }
-
-    console.log('xer', xer);
-
-    const className1 = classNames(
+    const className = classNames(
         'fa-solid',
+        {'icon1': icon1},
+        {'icon2': icon2},
         { 
             [`fa-${iconName}`]: iconName,
             [`fa-${size}`] : size
         },
        
     );
-
-        console.log('className', className1);
-
-        
-
     return (
-       <i className={className1} onClick={onClick} ></i>
+       <i className={className} onClick={onClick} ></i>
     )
  }
  export default Icon;
