@@ -4,6 +4,8 @@ import './App.css';
 import Icon from './components/Icon';
 import Button from './components/Button';
 import Button1 from './components/Button1';
+import Button2 from './components/Button2';
+import Button3 from './components/Button3';
 function App() {
   let a = 5;
   let b= 'Романа';
@@ -49,7 +51,9 @@ setSecondary(!secondary);
       <Icon  iconName={"cloud"} size={"2xl"} icon1={'icon1'} style={{margin:15}}  onClick={onclick1} 
       ></Icon>
       <Icon iconName={"ghost"} style={{margin:25}}  icon2={'icon2'}></Icon>
-      <Button1 standart={'start'}>4</Button1>
+      <Button1 standart={'start'}></Button1>
+      <Button2 standart2={'start2'}></Button2>
+      <Button3 standart3={'start3'}></Button3>
     </div>
   );
 }
