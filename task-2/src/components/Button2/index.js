@@ -2,13 +2,17 @@ import React from "react";
 import "./style.css";
 import Icon from "../Icon";
 import classNames from 'classnames';
-const Button2 = ({standart2}) =>{
+const Button2 = ({standart2,ShowIcon,children}) =>{
      let classes2  = classNames(
         {'start2': standart2}
     );
+    console.log(ShowIcon);
     return(
-    
-<button2 className={classes2}><Icon iconName={"car"} ></Icon>asdwe34534</button2>
+        
+        <button className={classes2}>
+            {ShowIcon===true && <Icon iconName={"car"}></Icon>} 
+            {children}
+        </button>
    )
 }
 export default Button2;

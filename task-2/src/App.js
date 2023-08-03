@@ -51,9 +51,11 @@ setSecondary(!secondary);
       <Icon  iconName={"cloud"} size={"2xl"} icon1={'icon1'} style={{margin:15}}  onClick={onclick1} 
       ></Icon>
       <Icon iconName={"ghost"} style={{margin:25}}  icon2={'icon2'}></Icon>
-      <Button1 standart={'start'}></Button1>
-      <Button2 standart2={'start2'}></Button2>
-      <Button3 standart3={'start3'}></Button3>
+      <Button1   standart={'start'}>GAMA</Button1>
+      <Button2  ShowIcon  standart2={'start2'}>Roman-desantnik</Button2>
+      <Button3   myIcon={"fire"}  standart3={'start3'}>Zalupa</Button3>
+      <Button1  text={'asdwe'} standart={'start'}></Button1>
+      <Button3     standart3={'start3'}>Piska</Button3>
     </div>
   );
 }
