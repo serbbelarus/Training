@@ -14,7 +14,7 @@ let classes = classNames(
     
     return (
         <button onClick={onBtnPress} className={classes} disabled={disabled} >
-            {loading ? 'Загрузка...' : children && text}
+            {loading ? 'Загрузка...' : children || text}
             {IconName  && <Icon iconName={IconName}></Icon>}
         </button>
     )

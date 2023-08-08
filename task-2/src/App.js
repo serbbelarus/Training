@@ -6,6 +6,7 @@ import Button from './components/Button';
 import Button1 from './components/Button1';
 import Button2 from './components/Button2';
 import Button3 from './components/Button3';
+import Button4 from './components/Button4';
 function App() {
   let a = 5;
   let b= 'Романа';
@@ -56,6 +57,8 @@ setSecondary(!secondary);
       <Button3   myIcon={"fire"}  standart3={'start3'}>Zalupa</Button3>
       <Button1  text={'asdwe'} standart={'start'}></Button1>
       <Button3     standart3={'start3'}>Piska</Button3>
+      <Button4   myIcon={'file-lines'}text={'text'} standart4={'start4'}/>
+      <Button4 myIcon={'child'} standart4={'start4'} text={'text'}>children</Button4>
     </div>
   );
 }
