@@ -1,0 +1,23 @@
+.start5{
+    padding: 25px;
+    position: relative;
+   padding: 6px 38px 6px 10px;
+   border-radius: 10px;
+   font-size: 16px;
+   font-weight: 300;
+   color: #426060;
+   background-color: #b7fcfc;
+   cursor: default;
+   user-select: none;
+
+   display: inline-block;
+    padding: 8px;
+    border: 3px solid #04eb3e;
+    border-radius: 6px;
+    box-shadow: 
+        0 2px 1px rgba(0, 0, 0, 0.2), 
+        inset 0 2px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+};
