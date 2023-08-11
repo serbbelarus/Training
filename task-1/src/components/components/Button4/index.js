@@ -2,19 +2,16 @@ import React from "react";
 import "./style.css";
 import Icon from "../Icon";
 import classNames from 'classnames';
-
-const Chip = ({onClose,standart5,onClick,myIcon,children,text,iconProps}) =>{
-    
+const Button4 = ({standart4,myIcon,children,text}) =>{
      let classes4  = classNames(
-        {'start5': standart5},
+        {'start4': standart4}
     );
     return(
-<div className={classes4} 
-onClose={onClose}
-onClick={onClick}>
+    
+<button className={classes4} >
     {!!myIcon===true && <Icon iconName={myIcon} ></Icon>}
     {children || text}
-    </div>
+    </button>
    )
 }
-export default Chip;
+export default Button4;
