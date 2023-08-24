@@ -3,17 +3,20 @@ import "./style.css";
 import Icon from "../Icon";
 import classNames from 'classnames';
 
-const Chip = ({onClose,standart5,onClick,myIcon,children,text,iconProps}) =>{
-    
+const Chip = (props) =>{
+    const {onClose,onClick,className,myIcon,children,text,iconProps} = props;
+
      let classes4  = classNames(
-        {'start5': standart5},
+        {[`${className}`]: className},
     );
     return(
 <div className={classes4} 
 onClose={onClose}
 onClick={onClick}>
-    {!!myIcon===true && <Icon iconName={myIcon} ></Icon>}
+    {!!myIcon===true && <Icon iconName={myIcon} {...iconProps} ></Icon>}
     {children || text}
+    {onClose && <Icon iconName={'close'} onClick={onClose}></Icon>}
+   
     </div>
    )
 }
