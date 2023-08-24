@@ -49,18 +49,22 @@ function App() {
 
         {false ? <div>1</div> : <div>2</div>}
         {displayDiv()}
-        <Chip className={'start6'}>Chip2</Chip>
-        <div>
-
+        <Chip className={'start6'}>
+          Chip2
+          </Chip>
+        <div className='div'>
         
         <Image 
          src={'https://flor2u.ru/images/uploads/conversion/85c/85cd3a71267f3f7a463e94f799f6470f/85cd3a71267f3f7a463e94f799f6470f-medium.jpg'}
         alt={'ромашка мой=*'}
-        height={100}
-        width={100}
+        height={400}
+        width={400}
         border={3}
         onclick={onClickImageRomashki}
-        ></Image>
+        className={'circle'}
+        objectFit={'contain'}
+        >  
+        </Image>
         </div>
     </div>
   );
