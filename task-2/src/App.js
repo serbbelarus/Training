@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Chip from './components/Chip';
 import Image from './components/Image';
+//import Select from './components/Select';
 
 
 function App() {
@@ -62,7 +63,7 @@ function App() {
         border={3}
         onclick={onClickImageRomashki}
         className={'circle'}
-        objectFit={'contain'}
+        objectFit={'сontain'}
         >  
         </Image>
         </div>

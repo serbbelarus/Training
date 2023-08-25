@@ -8,6 +8,7 @@ import Button2 from './components/Button2';
 import Button3 from './components/Button3';
 import Button4 from './components/Button4';
 import Chip from './components/Chip';
+import Image from './Image';
 
 
 function App() {
@@ -46,15 +47,25 @@ setSecondary(!secondary);
       {sum === 11 && <div>xerpizda2</div>}
       
       </div>
+      const onClickImageRomashki = () =>{
+        alert('Romashki');
+      };
   return (
     <div className="App">  
-   <Button onBtnPress={onClick1}   disabled={disabled} className={xerpizda} text={sum}>
+   <Button 
+   onBtnPress={onClick1}
+   disabled={disabled} 
+   className={xerpizda} 
+   text={sum}>
         2
       </Button>
-      <Button onBtnPress={onClick2} secondary={secondary}>
+      <Button onBtnPress={onClick2}
+      secondary={secondary}>
         Button 2
       </Button> 
-      <Button onBtnPress={() => {}}>Button 3</Button>
+      <Button onBtnPress={() => {}}>
+        Button 3
+        </Button>
       <Icon  iconName={"cloud"} size={"2xl"} icon1={'icon1'} style={{margin:15}}  onClick={onclick1} >
       </Icon>
       <Icon iconName={"ghost"} style={{margin:25}}  icon2={'icon2'}>
@@ -80,6 +91,17 @@ setSecondary(!secondary);
       <Chip standart5={'start5'} myIcon={'hippo'} size={"2xl"} onClose={Onclose1} onClick={onclickChip} >
         Chip
         </Chip>
+        <Image 
+         src={'https://flor2u.ru/images/uploads/conversion/85c/85cd3a71267f3f7a463e94f799f6470f/85cd3a71267f3f7a463e94f799f6470f-medium.jpg'}
+        alt={'ромашка мой=*'}
+        height={400}
+        width={400}
+        border={3}
+        onclick={onClickImageRomashki}
+        className={'circle'}
+        objectFit='contain'
+        >  
+        </Image>
     </div>
   );
 }

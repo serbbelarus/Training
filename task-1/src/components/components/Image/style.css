@@ -22,7 +22,7 @@ object-position: right bottom; */
     height: 100px;
     object-position: 20% 50px; */
 }
-.scale-down {
+.scale-dow {
     object-fit: scale-down;
     /* width: 300px;
     height: 150px;
