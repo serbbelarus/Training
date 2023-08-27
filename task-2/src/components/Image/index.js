@@ -2,10 +2,10 @@ import React from "react";
 import "./style.css";
 import classNames from 'classnames';
 
-const Image = ({src, alt='Image', height,width, onclick=()=>{console.log('image')},className,...props}) => {
+const Image = ({src, alt='Image', height,width, onclick=()=>{console.log('image')},className,objectFit,...props}) => {
     let classes  = classNames(
         {[`${className}`]: className},
-         
+        //{[`${objectFit}`]: objectFit}
     );
     return (
         <img  className={classes} 
