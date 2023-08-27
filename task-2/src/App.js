@@ -53,7 +53,6 @@ function App() {
         <Chip className={'start6'}>
           </Chip>
         <div className='div'>
-        
         <Image 
          src={'https://flor2u.ru/images/uploads/conversion/85c/85cd3a71267f3f7a463e94f799f6470f/85cd3a71267f3f7a463e94f799f6470f-medium.jpg'}
         alt={'ромашка мой=*'}

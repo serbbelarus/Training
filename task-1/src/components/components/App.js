@@ -11,6 +11,7 @@ import Chip from './components/Chip';
 import Image from './Image';
 
 
+
 function App() {
   let a = 5;
   let b= 'Романа';
@@ -94,12 +95,13 @@ setSecondary(!secondary);
         <Image 
          src={'https://flor2u.ru/images/uploads/conversion/85c/85cd3a71267f3f7a463e94f799f6470f/85cd3a71267f3f7a463e94f799f6470f-medium.jpg'}
         alt={'ромашка мой=*'}
-        height={400}
-        width={400}
-        border={3}
+        style={{
+          width:350,
+          height:200,
+          border:3,
+          objectFit: 'contain'}}
         onclick={onClickImageRomashki}
         className={'circle'}
-        objectFit='contain'
         >  
         </Image>
     </div>

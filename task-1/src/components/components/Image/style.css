@@ -4,30 +4,18 @@
     box-shadow: 0 0 7px #666; /* Параметры тени */
    
 }
-.fill {
+/*.fill {
     object-fit: fill;
-    /* width: 300px;
-    height: 150px;
-    object-position: 20px 20px; */
 }
 .contain {
 object-fit: contain;
-/* width: 150px;
-height: 150px;
-object-position: right bottom; */
 }
 .cover {
     object-fit: cover;
-    /* width: 200px;
-    height: 100px;
-    object-position: 20% 50px; */
 }
 .scale-dow {
     object-fit: scale-down;
-    /* width: 300px;
-    height: 150px;
-    object-position: 0 0; */
 }
 .none{
 object-fit: none;
-};
+}; */
