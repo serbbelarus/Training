@@ -60,7 +60,7 @@ function App() {
           width:350,
           height:200,
           border:3,
-          objectFit: 'none'}}
+          objectFit: 'contain'}}
         onclick={onClickImageRomashki}
         className={'circle'}
         >  
