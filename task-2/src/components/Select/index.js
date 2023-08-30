@@ -11,7 +11,7 @@ const Select = ({className,options,...props}) => {
         <div>
         <h1>Сountries</h1>
         <label>
-        <select className={classes} options={options} >
+        <select className={classes} options={options}  defaultValue="Belarus" >
         <option value="Germany">Germany</option>
         <option value="Russia">Russia</option>
         <option value="Belarus">Belarus</option>
