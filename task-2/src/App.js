@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Chip from './components/Chip';
 import Image from './components/Image';
-//import Select from './components/Select';
+import Select from './components/Select';
 
 
 function App() {
@@ -36,7 +36,9 @@ function App() {
   const onClickImageRomashki = () =>{
     alert('Romashki');
   };
-
+  const items =['Germany','Russia','Belarus'];
+  
+  
   return (
     <div className="App" onClick={() => alert('div')}>  
         {!!display===true && <Chip 
@@ -65,6 +67,9 @@ function App() {
         className={'circle'}
         >  
         </Image>
+        <Select  options={items}>
+        
+      </Select>
         </div>
     </div>
   );
